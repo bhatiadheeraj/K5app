@@ -121,17 +121,16 @@
                 android:textSize="24sp" />
 
 
-
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentlabel"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="40dp"
                 android:background="@color/colorAccent"
                 android:text="CALCULATE"
-                android:layout_marginRight="100dp"
-                android:layout_marginLeft="100dp"
-                android:textColor="@color/white"
-                android:layout_below="@+id/paymentlabel"
-                />
+                android:textColor="@color/white" />
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

@@ -50,6 +50,8 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),"hi activity",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),HTLanding.class);
+                startActivity(i);
             }
         });
 

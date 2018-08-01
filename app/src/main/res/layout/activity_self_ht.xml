@@ -8,6 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SelfHT">
 
     <RelativeLayout
@@ -59,9 +60,12 @@
            android:textSize="10sp"
            android:id="@+id/firstno"
            android:background="@drawable/ic_oval"
-           android:gravity="center"
+           android:gravity="center_horizontal|center_vertical"
+           android:paddingBottom="2dp"
+           android:shadowColor="#000"
+           android:shadowDx="20"
+           android:shadowDy="40"
            android:layout_marginTop="2dp"
-           android:shadowColor="@color/lightgreytext"
            />
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +75,7 @@
             android:id="@+id/wdob"
             android:textColor="@color/httextgrey"
             android:layout_marginLeft="10dp"
-            android:textSize="24sp"/>
+            android:textSize="18sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,6 +94,7 @@
             android:textStyle="bold"
             android:textColor="@color/colorAccent"
             android:textSize="10sp"
+            android:paddingBottom="2dp"
             android:id="@+id/secondno"
             android:background="@drawable/ic_oval"
             android:gravity="center"
@@ -107,7 +112,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/httextgrey"
             android:layout_marginLeft="10dp"
-            android:textSize="24sp"/>
+            android:textSize="18sp"/>
         <LinearLayout android:layout_below="@+id/wyg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,6 +140,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="10sp"
             android:id="@+id/thirdno"
+            android:paddingBottom="2dp"
             android:background="@drawable/ic_oval"
             android:gravity="center"
             android:layout_below="@+id/checkboxlayoutwyg"
@@ -152,7 +158,7 @@
             android:layout_marginTop="15dp"
             android:textColor="@color/httextgrey"
             android:layout_marginLeft="10dp"
-            android:textSize="24sp"/>
+            android:textSize="18sp"/>
         <LinearLayout android:layout_below="@+id/pred"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,6 +194,62 @@
             android:layout_marginLeft="30dp"
             android:id="@+id/noCheckbox"
             android:checked="false"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:paddingBottom="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="10sp"
+            android:id="@+id/fourthno"
+            android:background="@drawable/ic_oval"
+            android:gravity="center"
+            android:layout_below="@+id/noCheckbox"
+            android:layout_marginTop="20dp"
+            android:shadowColor="@color/lightgreytext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Investment"
+            android:layout_toRightOf="@+id/thirdno"
+            android:layout_below="@+id/noCheckbox"
+            android:id="@+id/MI"
+            android:gravity="left"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/httextgrey"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/noCheckbox"
+            android:text="RS.809000"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            />
+        <SeekBar
+            android:id="@+id/MIseekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MI"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="CALCULATE"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/MIseekbar"
+            />
+
     </RelativeLayout>
 </RelativeLayout>
 </ScrollView>

@@ -1,5 +1,6 @@
 package com.k5financial.k5app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -24,7 +25,8 @@ public class HTLanding extends AppCompatActivity {
         sf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+                Intent i = new Intent(getApplicationContext(), SelfHT.class);
+                startActivity(i);
             }
         });
 

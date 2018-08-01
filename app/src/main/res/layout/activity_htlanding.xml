@@ -12,7 +12,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_margin="16dp"
+            android:layout_margin="6dp"
             android:background="@color/white">
 
             <RelativeLayout
@@ -87,7 +87,7 @@
                     android:fontFamily="@font/opensans"
                     android:text="SELF"
                     android:textColor="@color/lightgreytext"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textStyle="bold" />
 
                 <RadioButton
@@ -115,7 +115,7 @@
                     android:id="@+id/sandslabel"
                     android:text="SELF and SPOUSE"
                     android:textColor="@color/lightgreytext"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textStyle="bold"/>
 
                 <RadioButton
@@ -139,7 +139,7 @@
                     android:text="Family of Four"
                     android:id="@+id/ffourlabel"
                     android:textColor="@color/lightgreytext"
-                    android:textSize="15sp"
+                    android:textSize="12sp"
                     android:textStyle="bold"/>
 
                 <RadioButton
