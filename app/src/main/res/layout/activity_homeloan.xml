@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homeloan"
+    android:background="#EEEEEE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_margin="16dp"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:id="@+id/logocontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/logocontainer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/labelloanamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans"
+                android:text="Loan Amount"
+                android:textColor="@color/menutext"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/labelloanamount"
+                android:layout_marginTop="5dp"
+                android:text="RS.000000"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/loanamountSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelloanamount"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/interestrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelloanamount"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/opensans"
+                android:text="Interest Rate"
+                android:textColor="@color/menutext"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/interestrate"
+                android:layout_alignParentEnd="true"
+                android:text="3%"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:layout_alignParentRight="true" />
+
+            <SeekBar
+                android:id="@+id/interestrateSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interestrate"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/tenure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interestrateSeekBar"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/opensans"
+                android:text="Tenure"
+                android:textColor="@color/menutext"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tenure"
+                android:layout_alignParentEnd="true"
+                android:text="3 Months"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/tenureseekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tenure"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="CALCULATE"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tenureseekbar"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

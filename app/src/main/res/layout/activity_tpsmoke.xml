@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TPSmoke"
+    android:background="#EFEFEF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans"
+                android:textColor="@color/lightgreytext"
+                android:text="Do you smoke?"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/smokingtitle"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/smokingimg"
+                android:src="@drawable/cigarette"
+                android:layout_below="@+id/smokingtitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/smokingimg">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/YES"
+                android:text="YES"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/NO"
+                android:text="NO"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
