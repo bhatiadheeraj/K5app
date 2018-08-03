@@ -73,6 +73,7 @@
             android:text="Whats your Date of Birth ? "
             android:layout_toRightOf="@+id/firstno"
             android:id="@+id/wdob"
+            android:gravity="left"
             android:textColor="@color/httextgrey"
             android:layout_marginLeft="10dp"
             android:textSize="18sp"/>
@@ -109,6 +110,7 @@
             android:layout_toRightOf="@+id/secondno"
             android:layout_below="@+id/dob"
             android:id="@+id/wyg"
+            android:gravity="left"
             android:layout_marginTop="10dp"
             android:textColor="@color/httextgrey"
             android:layout_marginLeft="10dp"
