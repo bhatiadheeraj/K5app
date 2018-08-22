@@ -59,41 +59,47 @@
                 android:textColor="@color/menutext"
                 android:textSize="20sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_alignRight="@+id/monthylinvestment"
                 android:layout_marginTop="5dp"
-                android:text="RS.000000"
+                android:hint="RS.000000"
+                android:background="@color/white"
+                android:id="@+id/etmi"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp" />
 
-            <SeekBar
-                android:id="@+id/loanamountSeekBar"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/monthylinvestment"
-                android:layout_marginTop="5dp" />
+            <!--<SeekBar-->
+                <!--android:id="@+id/loanamountSeekBar"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/monthylinvestment"-->
+                <!--android:layout_marginTop="5dp" />-->
 
             <TextView
                 android:id="@+id/interestrate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/monthylinvestment"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/opensans"
                 android:text="Interest Rate"
                 android:textColor="@color/menutext"
                 android:textSize="20sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/interestrate"
-                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="3%"
+                android:layout_alignRight="@+id/interestrate"
+                android:gravity="right"
+                android:layout_below="@+id/etmi"
+                android:hint="3%"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:id="@+id/etir"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp" />
 
@@ -111,16 +117,18 @@
                 android:layout_below="@+id/interestrateSeekBar"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/opensans"
-                android:text="Tenure"
+                android:text="Tenure (in months)"
                 android:textColor="@color/menutext"
                 android:textSize="20sp" />
 
-            <TextView
+            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/tenure"
                 android:layout_alignParentEnd="true"
-                android:text="3 Months"
+                android:hint="3"
+                android:background="@color/white"
+                android:id="@+id/ettenure"
                 android:textColor="@color/colorPrimary"
                 android:textSize="16sp" />
 
@@ -136,6 +144,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorAccent"
                 android:text="CALCULATE"
+                android:id="@+id/calcsip"
                 android:layout_marginRight="100dp"
                 android:layout_marginLeft="100dp"
                 android:textColor="@color/white"
